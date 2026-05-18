@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>false</UseWPF>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <Version>1.0.0</Version>
+    <Author>LMS Development Team</Author>
+    <Company>Enterprise Banking Systems</Company>
+    <Product>Loan Management System</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Entity Framework Core -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0" />
+
+    <!-- Guna UI2 -->
+    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.67" />
+
+    <!-- Security -->
+    <PackageReference Include="BCrypt.Net-Core" Version="1.6.0" />
+
+    <!-- Reporting -->
+    <PackageReference Include="SelectPdf" Version="22.1.0" />
+    <PackageReference Include="ClosedXML" Version="0.97.0" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.20.0" />
+
+    <!-- Utilities -->
+    <PackageReference Include="Dapper" Version="2.0.143" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>
